@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+<div class="body">
+  <form method="post" action=".">
+    <div class="container"> 
+        <div class="new">
+          <h1>Логин</h1>
+          <p class="user"><label for=""></label> 
+          <input type="text" name="username" placeholder="Логин" autofocus autocapitalize="none" autocomplete="username" maxlength="150" required id="id_username"></p>
+          <p><label for="id_password"></label> 
+          <input type="password" name="password" placeholder="Пароль" autocomplete="current-password" required id="id_password"></p>
+          <input type="submit" value="{% trans 'Войти' %}" />
+        {% csrf_token %}
+        <input type="hidden" name="next" value="{{ next }}" />
+        </form>
+        <div class="butt">
+          <div class="but">
+          <p><a class="pass" href="{% url 'password_reset' %}">Не помню пароль</a>.</p>
+          <p><a class="reg" href="{% url 'django_registration_register' %}">Зарегистрироваться</a></p>
+        </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+{% endblock %}

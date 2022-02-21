@@ -1,0 +1,54 @@
+{% extends 'basee.html' %}
+
+
+{% block main %}
+<body>
+    
+    
+    <div class="body">
+        <header>
+            <div class="container-wide">      
+                    <div class="logo"><a href="/">Pizza Coffe</a></div>
+                    <div class="nav"><a href="">Меню</a></div>
+                    <div class="login"><a href="">Логин</a></div>   
+            </div>
+        </header>
+        
+        <div class="down">
+            <div class="reciept">
+                <img src="{{ main_list.img.url }}" alt="" width="350" height="350"> <br> <br>
+                <h1 class="aas">{{ main_list.title }}</h1>
+                <h2 class="as">{{ main_list.full_tex}}</h2>
+                <div class="mainbuy">
+                    <form method="post" enctype="multipart/form-data"></form>
+                    {% csrf_token %}
+                    <a href="" class="buy" name="buy">купить</a>
+                    <a href="" class="clat">в коризну</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="osn">
+            <div class="block">
+                <hr>
+            </div>
+        </div><br><br>
+        <div class="comment">
+            <div class="comments">
+                {% for i in comment %}
+                <p>{{ i.user }}</p>
+                <p>{{i.comment}}</p>
+                
+                {% endfor %}
+                <form method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{form.comment}}
+                    <button class="btn btn-success" type="sumbit" value="{{main_list.id}}" name="com">Добавить комменте</button><br>
+                    </form>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+{% endblock %}

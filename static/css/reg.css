@@ -1,0 +1,32 @@
+body{
+    background-image: url(./../img/grou2.jpg);
+}
+
+
+h1{
+    color: rgb(251, 243, 243);
+}
+
+.new {
+    
+    margin-top: 250px;
+    text-decoration: none;
+    text-align: center;
+    
+}
+
+label{
+    margin-right: 10px;
+}
+
+.but a{
+    text-decoration: none;  
+}
+
+
+.news{
+    text-align: center;
+    margin-top: 250px;
+    
+    
+}

@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+<form method="post" action="/accounts/register/">
+  <div class="container">
+    <div class="news">
+      <h1>Регистарция</h1>
+      <input type="hidden" name="csrfmiddlewaretoken" value="X887UIu9MtS5ndH2xoIBfpIp9RNxElxiPHuGlYVKDQHyGooxGOHEEdqSrVlGFJmL">
+      <tr class="required"><th><label class="required"  for="id_username"></label></th><td><input type="text" placeholder='Имя пользвателя' name="username" maxlength="150" autocapitalize="none" autocomplete="username" autofocus required id="id_username"><br><span class="helptext"></span></td><br>
+      <tr class="required"><th><label class="required"  for="id_email"></label></th><td><input type="email" placeholder='Email' name="email" maxlength="254" required id="id_email"></td></tr><br><br>
+      <tr class="required"><th><label class="required" for="id_password1"></label></th><td><input type="password" placeholder='Пароль' name="password1" autocomplete="new-password" required id="id_password1"><br><span class="helptext"><br>
+      <tr class="required"><th><label class="required" for="id_password2"></label></th><td><input type="password" placeholder='Павторите Пароль' name="password2" autocomplete="new-password" required id="id_password2"><br><span class="helptext"></span></td></tr><br>
+      <input type="submit" value="Зарегистрироваться" />
+      </form>
+    </div>
+  </div>
+{% endblock %}

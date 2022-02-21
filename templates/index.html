@@ -1,0 +1,55 @@
+{% extends 'basee.html' %}
+
+
+{% block ul %}
+<div class="body">
+    <header>
+        <div class="container-wide">      
+                <div class="logo"><a href="">Pizza Coffe</a></div>
+                <div class="nav"><a href="">Меню</a></div>
+                {% if request.user.is_authenticated %}
+                <div class="login"><a href="">{{user.username}}</a><a href="{% url 'logout' %}">┃ Выйти</a></div>   
+                {% else %}
+                <div class="login"><a href="{% url 'login' %}">Логин</a></div>   
+                {% endif %}
+        </div>
+    </header>
+    <article>
+        <div class="main">
+            <img src="static/img/pizza.jpg" alt="" width="1471" height="600"><br><br>
+            <div class="text"><h1>Лучшая пицца в твоем городе!</h1></div>
+            <div class="text2"><h1>Только у нас в Pizza coffe</h1></div><br>
+            
+        </div>
+    </article>
+    <main>
+        <div class="osn">
+            <div class="block">
+                <span>Меню</span>
+            </div>
+        </div><br><br>
+        <div class="menu">
+            <div class="blocks">
+                {% for i in main_list %}
+                <div class="main_menu"> 
+                    <a href="{{ i.get_absolute_url }}" class="dd">{{ i.title }}</a>
+                    <div class="d">{{i.text}}</div>
+                    <img src="{{ i.img.url }}" alt="" width="300" height="300">    
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="osn">
+            <div class="block">
+                <hr>
+            </div>
+        </div><br><br>
+       
+        
+    </main>
+    
+</div>
+
+
+
+{% endblock %}

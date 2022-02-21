@@ -1,0 +1,226 @@
+
+
+
+
+*,
+*:after,
+*:before {
+margin:0px;padding:0px;
+box-sizing: border-box;
+}
+.body{
+    max-width: 3000px;
+    margin: 0 auto;
+    background-color: rgb(3, 3, 3);
+    
+    
+}
+
+
+.container-wide {
+    
+    width: 1400px;
+    padding: 0 15px;
+    margin: 0 auto;
+    display: inline-flex;
+    justify-content: space-between;
+   
+    
+    
+    
+}
+
+header {
+    padding-top: 40px;
+    
+}
+.container-wide a {
+    color: rgb(248, 250, 221);
+    text-decoration: none;
+    font-size: 30px;
+    
+}
+.container-wide a:hover {
+    color: rgba(226, 238, 62, 0.815);
+    transition: 1s;
+}
+.logo {
+    font-style: oblique;
+    font-weight: 700;
+}
+.main {
+    text-align: center;
+    color: wheat;
+}
+article {
+    padding-top: 100px;
+    
+
+}
+menu {
+    width: 50%
+    
+}
+
+
+
+.block {
+    text-align: center;  
+    width: 80%;          
+    margin: 0 auto;      
+    overflow: hidden;    
+    font-size: 30px;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+.block span {
+    position: relative;
+}
+
+.block span:before {
+    display: block;                  
+    width:1000px;                    
+    content: '';                     
+    position: absolute;              
+    border-bottom: 1px solid rgb(255, 255, 255);   
+    top:50%;                         
+    right: 110px;                   
+}
+ 
+
+ 
+.block span:after {
+    display: block;
+    width:1000px;
+    content: '';
+    position: absolute;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    top:50%;
+    left: 110px; 
+}
+/* .main_menu {
+    margin: 0 200px;
+    padding: 0px;
+    padding-left: 100px;
+    text-align: center; 
+    font-size: 20px;
+    color: wheat;
+    padding-right: 100px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 15px;
+    max-width: 400px
+  
+} */
+.main_menu a{
+    text-decoration: none;
+    color: aliceblue;
+    
+    
+    
+    
+    
+}
+
+.blocks{
+    
+    
+}
+.main_menu{  
+    margin-left: 100px;
+    margin-right: 10px;
+    margin-bottom: 40px;
+    display: inline-block;       
+    border: 1px solid rgba(255, 255, 255, 0.517);
+    border-radius: 15px;
+    padding: 30px; 
+}
+
+.main_menu a:hover{
+    color: rgb(0, 59, 59);
+    transition: 1s;
+}
+
+.a {
+    text-align: center;
+    
+
+}
+.main_menu dd {
+    text-align: center;
+}
+
+.reciept {
+    text-align: center;
+    color: white;
+    margin-top: 100px;
+}
+.aas {
+    color: rgba(220, 233, 198, 0.843);
+}
+.as {
+    font-size: 15px;
+    margin-right: 100px;
+}
+
+.block {
+    text-align: center;  
+    width: 80%;          
+    margin: 0 auto;      
+    overflow: hidden;    
+    font-size: 30px;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+.block span {
+    position: relative;
+}
+
+.block span:before {
+    display: block;                  
+    width:1000px;                    
+    content: '';                     
+    position: absolute;              
+    border-bottom: 1px solid rgb(255, 255, 255);   
+    top:50%;                         
+    right: 110px;                   
+}
+.mainbuy a{
+    justify-content: space-between;
+    text-decoration: none;
+    display: inline-flex;
+    padding: 0 80px;
+}
+.buy{
+    
+    position: relative;
+    display: inline-block;
+    padding: 15px, 30px;
+    color: #2195f3;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.6s;
+}
+
+.mainbuy a:hover{
+    color: #255784;
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+
+}
+.clat{
+    position: relative;
+    display: inline-block;
+    padding: 15px, 30px;
+    color: #2195f3;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.6s;
+}
